@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (static, relative, absolute e fixed)</title>
+    <style>
+        body{
+            background: #007fc7;
+        }
+        #container{
+            background: #fff;
+            width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        h1{
+        }
+
+        p{
+            width: 300px;
+        }
+
+        .relative{
+            border: 1px solid red;
+            position: relative;
+            /*top, right, bottom, left*/
+            top: -124px;
+            right: -290px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+
+        <p> <strong>P1</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+
+        <p class="relative"> <strong>P2</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+
+        <p class="relative"> <strong>P3</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+    </div>
+    
+</body>
+</html>
