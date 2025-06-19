@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
             width: 800px;
             margin: 20px auto;
             padding: 10px;
+            position: relative;
         }
 
         h1{
@@ -22,11 +23,28 @@
             width: 300px;
         }
 
+        .absolute{
+            border: 1px solid blue;
+            background: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 20px;
+        }
+
+        .fixed{
+            border: 1px solid blue;
+            background: #f2f2f2;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            margin: 0px;
+        }
+
         .relative{
             border: 1px solid red;
             position: relative;
             /*top, right, bottom, left*/
-            top: -124px;
+            top: 20px;
             right: -290px;
         }
 
@@ -38,9 +56,16 @@
 
         <p> <strong>P1</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
 
-        <p class="relative"> <strong>P2</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+        <p class="absolute"> <strong>P2</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
 
         <p class="relative"> <strong>P3</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+
+        <p class="fixed"> <strong>P3</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+
+        <p class=""> <strong>P3</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+
+        <p class=""> <strong>P3</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sunt quidem, totam aspernatur sint labore impedit nam officiis exercitationem perferendis sit veniam doloribus tempore alias. Debitis maxime ea illum impedit?</p>
+
     </div>
     
 </body>
