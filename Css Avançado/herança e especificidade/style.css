@@ -1,0 +1,30 @@
+/*herança e Especificidade*/
+
+
+/* Seletores iguais, exceção important
+#pagina p{
+    color: blue !important;
+}
+
+#pagina p{
+    color: rgb(189, 140, 140);
+}
+*/
+
+/*Se um seletor for mais específico que outro a regra mais específica será aplicada (terá precedência sobre regras mais gerais)*/
+
+*{
+    color: rebeccapurple;
+}
+
+h2{/*3*/
+    color: burlywood;
+}
+
+h2.primeiro{/*2*/
+    color: green;
+}
+
+h2#segundo{/*1*/
+    color: rgb(228, 228, 41);
+}
