@@ -27,11 +27,22 @@ ul a{
     line-height: 40px;
     font-size: 2.8vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: url(imagens/menu.png) no-repeat left;
+    background: #f7b600 url(imagens/menu.png) no-repeat left;
 }
 
 a:hover{
     background-position: right bottom;
+    background-color: #f99200;
     transition: 0.5s;
+    color: white;
+}
+
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a{
+    background-position: right bottom;
+    background-color: #f99200;
     color: white;
 }
