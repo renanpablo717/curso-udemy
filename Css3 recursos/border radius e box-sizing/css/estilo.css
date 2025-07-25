@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #b9c941;
+    text-align: center;
+
+    /*-webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;*/
+}
+
+
+#caixa2{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    text-align: center;
+    
+    /*-webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;*/
+}
+
+.arredondamento{
+    margin: 30px;
+    border-radius: 100px;
+}
