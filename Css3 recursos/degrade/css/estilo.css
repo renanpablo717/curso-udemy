@@ -8,7 +8,7 @@
     box-sizing: border-box;
     /*background: url(../imagens/camera.png);*/
     background: linear-gradient(100deg, steelblue, rgba(70, 131, 180, 0.479));
-    box-shadow: 10px 10px 10px rgba(58, 122, 175, 0.432);
+    box-shadow: 10px 10px 3px rgba(58, 122, 175, 0.432);
 }
 
 #caixa h1{
