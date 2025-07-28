@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* Regra @charset caso haja problemas com acentuação */
+
+header{
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 3vh;
+    text-align: center;
+}
+
+nav{
+    border: 1px solid black;
+    background: lightpink;
+    padding: 10px;
+    font-size: 3vh;
+}
+
+article{
+    max-width: 550px;
+    margin-top: 3px;
+    background: orange;
+    padding: 10px;
+    border: 1px solid black;
+    float: left;
+}
+
+section{
+    border: 1px dotted #fff;
+    padding: 5px;
+}
+
+#segundo-menu{
+    background: lightgreen;
+    max-width: 450px;
+    height: 240px;
+}
+
+aside{
+    padding: 3px;
+    max-width: 450px;
+    background: lightblue;
+    float: left;
+    border: 1px solid black;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+footer{
+    clear: both;
+    height: 50px;
+    text-align: center;
+    font-size: 3.5vh;
+    color: #111;
+    padding-top: 10px;
+    text-shadow: 2px 2px 2px #777;
+}

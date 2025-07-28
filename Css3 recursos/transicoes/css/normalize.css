@@ -1,0 +1,431 @@
+/* Document
+ * =============================================================================== */
+
+/**
+ * 1. Corrija a altura da linha em todos os navegadores.
+ * 2. Evite ajustes no tamanho da fonte após mudanças de orientação em
+ * IE no Windows Phone e no iOS.
+ */
+
+html {
+  altura da linha: 1,15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Seções
+ * =============================================================================== */
+
+/**
+ * Corrija o tamanho da fonte e a margem nos elementos `h1` dentro de `section` e
+ * contextos de `artigo` no Chrome, Edge, Firefox e Safari.
+ */
+
+h1 {
+  tamanho da fonte: 2em;
+  margem: 0,67em 0;
+}
+
+/* Agrupando conteúdo
+ * =============================================================================== */
+
+/**
+ * Remova a margem em listas aninhadas no Chrome, Edge, IE e Safari.
+ */
+
+dl dl,
+dl ol,
+dl ul,
+velho dl,
+ul dl {
+  margem: 0;
+}
+
+/**
+ * Remova a margem em listas aninhadas no Edge 18 e no IE.
+ */
+
+olá olá,
+ol ul,
+ul ol,
+ul ul {
+  margem: 0;
+}
+
+/**
+ * 1. Adicione o tamanho correto da caixa no Firefox.
+ * 2. Corrija a herança da cor da borda no Firefox.
+ * 3. Mostrar o estouro no Edge 18 e no IE.
+ */
+
+horas {
+  dimensionamento da caixa: caixa de conteúdo; /* 1 */
+  cor: herdar; /* 2 */
+  altura: 0; /* 1 */
+  estouro: visível; /* 3 */
+}
+
+/**
+ * Adicione a exibição correta no IE.
+ */
+
+principal {
+  exibir: bloco;
+}
+
+/**
+ * 1. Corrija a herança e a escala do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o tamanho estranho da fonte `em` em todos os navegadores.
+ */
+
+pré {
+  font-family: monoespaçado, monoespaçado; /* 1 */
+  tamanho da fonte: 1em; /* 2 */
+}
+
+/* Semântica em nível de texto
+ * =============================================================================== */
+
+/**
+ * Remova o fundo cinza dos links ativos no IE 10.
+ */
+
+uma {
+  cor de fundo: transparente;
+}
+
+/**
+ * Adicione a decoração de texto correta no Edge 18, IE e Safari.
+ */
+
+abr[título] {
+  decoração de texto: sublinhado;
+  decoração de texto: sublinhado pontilhado;
+}
+
+/**
+ * Adicione o peso de fonte correto no Chrome, Edge e Safari.
+ */
+
+b,
+forte {
+  espessura da fonte: mais negrito;
+}
+
+/**
+ * 1. Corrija a herança e a escala do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o tamanho estranho da fonte `em` em todos os navegadores.
+ */
+
+código,
+KBD,
+amostra {
+  font-family: monoespaçado, monoespaçado; /* 1 */
+  tamanho da fonte: 1em; /* 2 */
+}
+
+/**
+ * Adicione o tamanho de fonte correto em todos os navegadores.
+ */
+
+pequeno {
+  tamanho da fonte: 80%;
+}
+
+/* Conteúdo incorporado
+ * =============================================================================== */
+
+/**
+ * Adicione a exibição correta no IE 9-.
+ */
+
+áudio,
+vídeo {
+  exibição: bloco embutido;
+}
+
+/**
+ * Adicione a exibição correta no iOS 4-7.
+ */
+
+áudio:não([controles]) {
+  exibição: nenhuma;
+  altura: 0;
+}
+
+/**
+ * Remova a borda em imagens dentro de links no IE 10-.
+ */
+
+imagem {
+  estilo de borda: nenhum;
+}
+
+/**
+ * Oculte o estouro no IE.
+ */
+
+svg:não(:root) {
+  estouro: oculto;
+}
+
+/* Dados tabulares
+ * =============================================================================== */
+
+/**
+ * 1. Corrigir a herança de cores da borda da tabela em todos os navegadores Chrome, Edge e Safari.
+ * 2. Remova o recuo de texto do conteúdo da tabela no Chrome, Edge e Safari.
+ */
+
+mesa {
+  cor da borda: herdar; /* 1 */
+  recuo do texto: 0; /* 2 */
+}
+
+/* Formulários
+ * =============================================================================== */
+
+/**
+ * Remova a margem dos controles no Safari.
+ */
+
+botão,
+entrada,
+selecione {
+  margem: 0;
+}
+
+/**
+ * 1. Mostrar o estouro no IE.
+ * 2. Remova a herança da transformação de texto no Edge 18-, Firefox e IE.
+ */
+
+botão {
+  estouro: visível; /* 1 */
+  transformação de texto: nenhum; /* 2 */
+}
+
+/**
+ * Corrige a incapacidade de estilizar botões no iOS e no Safari.
+ */
+
+botão,
+[tipo="botão"],
+[tipo="redefinir"],
+[tipo="enviar"] {
+  -webkit-aparência: botão;
+}
+
+/**
+ * Corrija o preenchimento no Firefox.
+ */
+
+conjunto de campos {
+  preenchimento: 0,35em 0,75em 0,625em;
+}
+
+/**
+ * Mostrar o estouro no Edge 18 e no IE.
+ */
+
+entrada {
+  estouro: visível;
+}
+
+/**
+ * 1. Corrija a quebra de texto no Edge 18 e no IE.
+ * 2. Corrija a herança de cores dos elementos `fieldset` no IE.
+ */
+
+lenda {
+  dimensionamento de caixa: caixa de borda; /* 1 */
+  cor: herdar; /* 2 */
+  exibição: tabela; /* 1 */
+  largura máxima: 100%; /* 1 */
+  espaço em branco: normal; /* 1 */
+}
+
+/**
+ * 1. Adicione a exibição correta no Edge 18 e no IE.
+ * 2. Adicione o alinhamento vertical correto no Chrome, Edge e Firefox.
+ */
+
+progresso {
+  exibição: bloco embutido; /* 1 */
+  alinhamento vertical: linha de base; /* 2 */
+}
+
+/**
+ * Remova a herança da transformação de texto no Firefox.
+ */
+
+selecione {
+  transformação de texto: nenhum;
+}
+
+/**
+ * 1. Remova a margem no Firefox e no Safari.
+ * 2. Remova a barra de rolagem vertical padrão no IE.
+ */
+
+área de texto {
+  margem: 0; /* 1 */
+  estouro: automático; /* 2 */
+}
+
+/**
+ * 1. Adicione o tamanho de caixa correto no IE 10-.
+ * 2. Remova o preenchimento no IE 10-.
+ */
+
+[tipo="caixa de seleção"],
+[tipo="rádio"] {
+  dimensionamento de caixa: caixa de borda; /* 1 */
+  preenchimento: 0; /* 2 */
+}
+
+/**
+ * 1. Corrija a aparência estranha no Chrome, Edge e Safari.
+ * 2. Corrija o estilo do contorno no Safari.
+ */
+
+[tipo="pesquisar"] {
+  -webkit-appearance: campo de texto; /* 1 */
+  contorno-deslocamento: -2px; /* 2 */
+}
+
+/**
+ * Corrija o estilo do cursor dos botões de incremento e decremento no Safari.
+ */
+
+::-botão-de-rotação-interna-do-webkit,
+::-botão-de-rotação-externa-do-webkit {
+  altura: automático;
+}
+
+/**
+ * Corrija o estilo de texto dos marcadores de posição no Chrome, Edge e Safari.
+ */
+
+::-webkit-input-placeholder {
+  cor: herdar;
+  opacidade: 0,54;
+}
+
+/**
+ * Remova o preenchimento interno no Chrome, Edge e Safari no macOS.
+ */
+
+::-webkit-search-decoração {
+  -webkit-aparência: nenhuma;
+}
+
+/**
+ * 1. Corrija a incapacidade de estilizar botões de upload no iOS e Safari.
+ * 2. Altere as propriedades da fonte para `herdar` no Safari.
+ */
+
+::-botão-de-upload-de-arquivo-webkit {
+  -webkit-appearance: botão; /* 1 */
+  fonte: herdar; /* 2 */
+}
+
+/**
+ * Remova a borda interna e o preenchimento dos contornos de foco no Firefox.
+ */
+
+::-moz-foco-interno {
+  estilo de borda: nenhum;
+  preenchimento: 0;
+}
+
+/**
+ * Restaure os estilos de contorno de foco não definidos pela regra anterior no Firefox.
+ */
+
+:-moz-anel de foco {
+  contorno: ButtonText pontilhado de 1px;
+}
+
+/**
+ * Remova os estilos adicionais :invalid no Firefox.
+ */
+
+:-moz-ui-inválido {
+  box-shadow: nenhum;
+}
+
+/* Interativo
+ * =============================================================================== */
+
+/*
+ * Adicione a exibição correta no Edge 18 e no IE.
+ */
+
+detalhes {
+  exibir: bloco;
+}
+
+/*
+ * Adicione os estilos corretos no Edge 18, IE e Safari.
+ */
+
+diálogo {
+  cor de fundo: branco;
+  borda: sólida;
+  cor: preto;
+  exibir: bloco;
+  altura: -moz-fit-content;
+  altura: -webkit-fit-content;
+  altura: fit-content;
+  esquerda: 0;
+  margem: auto;
+  preenchimento: 1em;
+  posição: absoluta;
+  direita: 0;
+  largura: -moz-fit-content;
+  largura: -webkit-fit-content;
+  largura: fit-content;
+}
+
+diálogo:não([abrir]) {
+  exibição: nenhuma;
+}
+
+/*
+ * Adicione a exibição correta em todos os navegadores.
+ */
+
+resumo {
+  exibição: item de lista;
+}
+
+/* Scripting
+ * =============================================================================== */
+
+/**
+ * Adicione a exibição correta no IE 9-.
+ */
+
+tela {
+  exibição: bloco embutido;
+}
+
+/**
+ * Adicione a exibição correta no IE.
+ */
+
+modelo {
+  exibição: nenhuma;
+}
+
+/* Interação do usuário
+ * =============================================================================== */
+
+/**
+ * Adicione a exibição correta no IE 10-.
+ */
+
+[escondido] {
+  exibição: nenhuma;
+}
