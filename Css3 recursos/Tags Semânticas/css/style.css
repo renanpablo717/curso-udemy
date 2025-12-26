@@ -32,13 +32,13 @@ section{
 
 #segundo-menu{
     background: lightgreen;
-    max-width: 450px;
+    max-width: 550px;
     height: 240px;
 }
 
 aside{
     padding: 3px;
-    max-width: 450px;
+    max-width: 550px;
     background: lightblue;
     float: left;
     border: 1px solid black;
