@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+
+    <script>
+
+        var a = 20;
+        var b = 10;
+        var c = null;
+
+        document.write('<p> A é: ' + a + '</p>');
+        document.write('<p> B é: ' + b + '</p>');
+        document.write('<p> C é: ' + c + '</p>');
+
+        document.write('<hr>')
+
+        //Lógica de inversão de valores entre as variáveis A e B
+        c = a; //C recebe o valor de A
+        a = b; //A recebe o valor de B
+        b = c; //B recebe o valor de C
+        c = null; //C recebe o valor nulo
+
+
+        document.write(' A agora é: ' + a +'<br>');
+
+        document.write(' B agora é: ' + b +' <br>');
+
+        document.write(' C agora é: ' + c +' <br>');
+
+
+    </script>
+ 
+
+</head>
+<body>
+
+
+</body>
+</html>
