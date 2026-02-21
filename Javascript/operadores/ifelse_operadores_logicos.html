@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+
+        document.write("<h1>Operadores Lógicos</h1>");
+
+        if(2 == 2 && 3 >= 1){
+            document.write("Verdadeiro");
+        } else {
+            document.write("Falso");
+        }
+
+        document.write("<br>");
+        document.write("<hr>");
+
+        if(2 == 2 || 3 >= 1 || 5 < 1){
+            document.write("Verdadeiro");
+        } else {
+            document.write("Falso");
+        }
+
+        document.write("<br>");
+        document.write("<hr>");
+
+        if(!(4 == 2 )){//Negação - Se 4 não for igual a 2, então é verdadeiro
+            document.write("Verdadeiro");
+        } else {
+            document.write("Falso");
+        }
+
+        document.write("<br>");
+        document.write("<hr>");
+
+
+        document.write("<h1>Verificação de Notas</h1>");
+
+        var nota = prompt("Digite a nota do aluno: ");
+        var faltas = prompt("Digite o número de faltas do aluno: ");
+
+
+        var media = 7;
+        var faltas_maximas = 15;
+
+
+        if(nota >= media && faltas <= faltas_maximas){
+            document.write("Aluno aprovado");
+        } else {
+            document.write("Aluno reprovado");
+        }
+
+
+        document.write("<br>");
+        document.write("<hr>");
+
+        document.write("<h1>Operador Ternário</h1>");
+
+        
+        var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado';
+
+        document.write("Resultado: " + resultado);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
