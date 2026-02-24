@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+
+        var nome = prompt("Digite seu nome: ");
+        var altura = prompt("Digite sua altura: ");
+        var peso = prompt("Digite seu peso: ");
+
+        altura = parseFloat(altura) / 100;
+        peso = parseFloat(peso);
+
+        var imc = peso / (altura* altura);
+
+        document.write("Olá " + nome + ", seu IMC é: " + imc.toFixed(2));
+
+        document.write("<br />");
+
+        document.write("De acordo com a tabela de classificação do IMC, você está classificado como: ");
+
+        if (imc < 16){
+            document.write("Baixo peso muito grave");
+        }
+
+        else if(imc >= 16 && imc < 17){
+            document.write("Baixo peso grave");
+        }
+
+        else if(imc >= 17 && imc < 18.5){
+            document.write("Baixo peso");
+        }
+
+        else if(imc >= 18.5 && imc < 25){
+            document.write("Peso normal");
+        }
+
+        else if(imc >= 25 && imc < 30){
+            document.write("Sobrepeso");
+        }
+
+        else if(imc >= 30 && imc < 35){
+            document.write("Obesidade grau I");
+        }
+
+        else if(imc >= 35 && imc < 40){
+            document.write("Obesidade grau II");
+        }
+
+        else{
+            document.write("Obesidade grau III ou mórbida");
+        }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
