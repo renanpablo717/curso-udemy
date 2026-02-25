@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+
+        var largura = parseInt(prompt("Digite a largura do terreno: "));
+        var comprimento = parseInt(prompt("Digite o comprimento do terreno: "));
+
+        document.write("A área do terreno é: " + calcularAreaTerreno(largura, comprimento) + " m²");
+
+        function calcularAreaTerreno(largura, comprimento){
+            
+            //lógica
+            var area = largura * comprimento;
+            return area;
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
