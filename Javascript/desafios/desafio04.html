@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 04</title>
+
+    <script>
+
+        var num1 = parseFloat(prompt('Digite um número: '))
+        var operacao = prompt('Subtração ou Soma?').toLowerCase();
+        var num2 = parseFloat(prompt('Digite um número: '))
+
+
+        function calculo(num1, num2, operacao){
+
+            var resultado = 0;
+
+            if (operacao == 'soma'){
+                resultado = num1 + num2;
+            }
+
+            else if (operacao == 'subtracao'){
+                resultado = num1 - num2;
+            }
+            else{
+                return resultado = 'operação inválida';
+            }
+            return resultado;
+
+        }
+
+        document.write('O resultado é: ' + calculo(num1, num2, operacao))
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
