@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        function foco(corFundo) {
+            document.getElementById('inputador').style.backgroundColor =  corFundo;
+        }
+        
+        function desfoca(corFundo) {
+            document.getElementById('inputador').style.backgroundColor =  corFundo;
+        }
+
+        function contarCaracter(){
+            var caracteres = document.getElementById('inputador').value;
+
+            var total = caracteres.length;
+
+            console.log(total)
+
+            if (total == 0){
+                document.getElementById('inputador').style.backgroundColor =  '#FFF';
+            }
+            else if(total <= 3){
+                document.getElementById('inputador').style.backgroundColor =  '#FF0000';
+            }else{
+                document.getElementById('inputador').style.backgroundColor =  '#00FF00';
+            }
+
+
+        }
+
+    
+
+    </script>
+
+</head>
+<body>
+
+
+      <input onblur="desfoca('#FFF')" onfocus="foco('#FFFF00')" oninput="contarCaracter()" id="inputador" type="text">
+
+    
+
+    
+
+   
+
+
+</body>
+</html>
