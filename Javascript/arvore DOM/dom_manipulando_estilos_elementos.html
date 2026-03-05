@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+
+    <script>
+
+        function modificaEstilo(corDeFundo, w, h, b){
+           
+            document.getElementById('caixa').style.backgroundColor = corDeFundo;
+            document.getElementById('caixa').style.width = w;
+            document.getElementById('caixa').style.height = h;
+
+            document.getElementById('caixa').style.border = b;
+        }
+
+    </script>
+
+</head>
+<body>
+
+
+    <h3>Manipulando estilos</h3>
+
+    <button type="button" onclick="modificaEstilo('#FF0000', '200px', '100px')">Vermelho</button>
+
+    <button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')">Verde</button>
+
+    <button type="button" onclick="modificaEstilo('#0000FF', '150px', '200px')">Azul</button>
+
+    <button type="button" onclick="modificaEstilo('#FFF', '100px', '100px', '1px solid black')">Reset</button>
+    
+
+    <hr>
+
+    <div style="border: 1px solid black; width: 100px; height: 100px;" id="caixa"></div>
+        
+</body>
+</html>
