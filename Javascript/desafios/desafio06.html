@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        var objetos = Array('cadeira', 'impressora', 'gato')
+
+
+        function recupera(){
+            var valida = document.getElementById('inputador').value.trim().toLowerCase();
+
+            if (valida === ''){
+                alert('Informe um valor válido')
+            }
+            else if(objetos.includes(valida)){
+                alert('Objeto já adicionado')
+            }
+            else{
+                objetos.push(valida)
+                console.log(objetos)
+                document.getElementById('inputador').value = ''
+            }
+        }
+
+        function ordenar(){
+            console.log(objetos.sort())
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <input type="text" id="inputador">
+    <button onclick="recupera()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+    
+</body>
+</html>
