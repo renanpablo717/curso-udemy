@@ -7,10 +7,23 @@
 
     <script>
 
-        var listaConvidados = ['Jorge', 'jamilton', 'José', 'Renan', 'Maria', 'Ana']
+        /*var listaConvidados = ['Jorge', 'jamilton', 'José', 'Renan', 'Maria', 'Ana']*/
 
-        for(){
-            
+        
+
+
+         var listaConvidados = Array()
+
+         listaConvidados['a'] = 'Jorge' 
+         listaConvidados[10] = 'Jamilton' 
+         listaConvidados['zebra'] = 'José' 
+         listaConvidados[true] = 'Renan' 
+         listaConvidados[1] = 'Maria' 
+
+        console.log(listaConvidados)
+
+        for( var x in listaConvidados){
+            console.log('Índice: ' + x + ' valor: ' +  listaConvidados[x])
         }
 
     </script>
