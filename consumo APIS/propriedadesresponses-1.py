@@ -15,3 +15,9 @@ elif resp.status_code >= 400 and resp.status_code < 500:
     # 405 Método não permitido(GET onde só pode POST)
     # 429 Requisições demasiadas
     print("Erro do cliente")
+else:
+    # Erro do servidor, execute novamente mais tarde
+    print("Erro do servidor")
+
+print(resp.headers)
+
